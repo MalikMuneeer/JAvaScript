@@ -1,0 +1,16 @@
+#panel,
+.flip {
+  font-size: 16px;
+  padding: 10px;
+  width: 20rem;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+}
+
+#panel {
+  display: block;
+  display: none;
+}

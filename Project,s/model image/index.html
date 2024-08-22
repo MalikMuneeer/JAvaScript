@@ -1,0 +1,54 @@
+==============================HTML================================
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Model</title>
+  </head>
+  <body>
+    <main>
+      <div  class="image">
+        <div class="one">
+          <img src="black.PNG" style="width: 100%" />
+          <img src="blue.jpg" style="width: 100%" />
+        </div>
+
+        <div>
+          <img src="black1.jpg" style="width: 100%" />
+          <img src="image 1.webp" style="width: 100%" />
+        </div>
+      </div>
+      <div class="menue">
+      <div class="block">
+        <h3 class="block-heading">Position y</h3>
+        <div class="wrapper vertical">
+          <input type="range" id="pos-y" min="0" max="600" value="0" />
+          <label for="pos-y">
+            <span>0</span>
+            <span>600</span>
+          </label>
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="block-heading">Position X</h3>
+        <div class="wrapperal horizental">
+            <label for="pos-x">
+                <span>0</span>
+                <span>800</span>
+            </label>
+            <input type="range" id="pos-x" min="0" max="800" value="0">
+           
+        </div>
+      </div>
+      <div class="container">
+        <div id="block">
+          
+        </div>
+     </div>
+    </main>
+    <script src="block.js"></script>
+  </body>
+</html>

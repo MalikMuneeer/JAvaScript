@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameters</title>
+</head>
+<body>
+    <Script>
+        function getMilk(Money, costPerBottels){
+            var NumberOfBottels=Math.floor(Money/costPerBottels);
+            alert("Number of Bottels Is:" + " " + NumberOfBottels);
+             alert("buy"+ " " + calcBottels(Money, costPerBottels)+" " + "bottels of milk");
+            return calcChange(Money,costPerBottels);
+        }
+      
+        function calcBottels(StartMoney, costPerBottels){
+            var NumberOfBottels=Math.floor(StartMoney/ costPerBottels);
+            return NumberOfBottels;
+        }
+        function calcChange(StartingAmount,costPerBottels){
+            var change=Math.floor(StartingAmount%costPerBottels);
+            return change;
+        }
+        alert("Hello Master Here Is Your"+ " " + getMilk(10 , 3) + " " + "Change.");
+                           
+    </Script>
+</body>
+</html>

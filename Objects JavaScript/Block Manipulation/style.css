@@ -1,0 +1,70 @@
+.block{
+    width: 140px;
+    height: 150px;
+    background: linear-gradient(to top,#333 0%, #666 30%, #333 100%);
+    box-shadow: inset 2px 2px 5px 2px #333;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    margin-top: 2px;
+}
+h3{
+    font-family: Arial;
+    font-size: 18px;
+    text-align: center;
+}
+.vertical{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.vertical input{
+    transform: rotate(90deg);
+    width: 75px;
+}
+.vertical label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75px;
+}
+.horizental{
+    width: 100px;
+    margin: 0 auto;
+}
+.horizental input{
+    width: 100px;
+
+}
+.horizental label{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.center{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#ok-shape{
+    margin-top: 10px;
+}
+.hex-contant{
+    
+   margin: 20px;
+   
+}
+.rgba-container{
+    width: 100px;
+    margin: 0 auto;
+}
+.rgba-container input{
+    width: 80px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manipulation</title>
+  </head>
+  <body>
+    <h2>My name is muneer</h2>
+    <ul id="element">
+      <li class="list-item">First item</li>
+      <li class="list-item">Second item</li>
+      <li class="list-item">Third item</li>
+    </ul>
+    <table>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+      </tr>
+      <tr>
+        <td>three</td>
+        <td>four</td>
+      </tr>
+    </table>
+    <!-- <script>
+      //   console.log(document.body.childNodes);
+      //   console.log(document.body.children);
+      //   console.log(document.body.firstChild);
+      //   console.log(document.body.firstElementChild);
+      //   const FirstChilBody = document.body.firstChild;
+      //   console.log(FirstChilBody);
+      const ulTag = document.body.children[0];
+      const firstLi = ulTag.children[0];
+      const secondLi = ulTag.children[1];
+      console.log(firstLi.nextElementSibling.textContent);
+    </script> -->
+    <script>
+      //   const secondLi = document.querySelector("li:nth-child(2)");
+      // const ulTag = document.body.children[0];
+      // const firstLi = ulTag.children[0];
+      // const secondLi = ulTag.children[1];
+      // console.log(secondLi.previousElementSibling.textContent);
+
+      // --------------------------------Table----------------------
+      // const tableTag = document.body.children[2];
+      // console.log(tableTag.tBodies[0].rows[0].cells[0].textContent);
+
+      // =============================ID   ClassName======================
+      // const ulList = document.getElementById("element");
+      // ulList.style.backgroundColor = "blue";
+      // ulList.style.margin = "5px";
+      // const liClass = document.getElementsByClassName("list-item");
+      // liClass[0].style.backgroundColor = "red";
+
+      // ===========================Query Selector==================
+
+      // const liList = document.querySelectorAll(".list-item");
+      // const liList = document.querySelectorAll("#element");
+      // const liList = document.querySelectorAll("ul > li:last-child");
+      const liList = document.querySelectorAll("ul > li:nth-child(2)");
+      console.log(liList[0].textContent);
+    </script>
+  </body>
+</html>

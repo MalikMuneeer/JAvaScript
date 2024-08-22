@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance Portal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+      }
+      .attendance-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .attendance-form input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .attendance-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Mark Attendance</h2>
+      <form class="attendance-form">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+
+        <button type="button" id="markAttendanceBtn">Mark Attendance</button>
+      </form>
+      <p id="attendanceMessage"></p>
+    </div>
+
+    <script>
+      const markAttendanceBtn = document.getElementById("markAttendanceBtn");
+      const attendanceMessage = document.getElementById("attendanceMessage");
+
+      markAttendanceBtn.addEventListener("click", function () {
+        const studentName = document.getElementById("studentName").value;
+        const date = document.getElementById("date").value;
+
+        // Simulate marking attendance by displaying a message
+        attendanceMessage.textContent = `${studentName} is marked present on ${date}.`;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Switch</title>
+    <style>
+      .switch-container {
+        display: flex;
+        align-items: center;
+      }
+      .switch-label {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="switch-container">
+      <label class="switch-label">Electricity:</label>
+      <label class="switch">
+        <input type="checkbox" id="switchToggle" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <script>
+      const switchToggle = document.getElementById("switchToggle");
+
+      switchToggle.addEventListener("change", function () {
+        const electricityStatus = switchToggle.checked ? "ON" : "OFF";
+        console.log(`Electricity is ${electricityStatus}`);
+      });
+    </script>
+  </body>
+</html>

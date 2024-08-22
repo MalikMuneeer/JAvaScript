@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+    <script>
+      //   const calcAge = function (birthyear) {
+      //     return 2037 - birthyear;
+      //   };
+      //   const yearUntilRetirement = function (birthyear, firstName) {
+      //     const age = calcAge(birthyear);
+      //     const retirement = 65 - age;
+      //     if (retirement > 0) {
+      //       console.log("${firstName} return in ${retirement} years");
+      //       return retirement;
+      //     } else {
+      //       console.log("${firstName} has Already retired");
+      //       return -1;
+      //     }
+      //   };
+      //   console.log(yearUntilRetirement(1991, "Muneer"));
+      //   console.log(yearUntilRetirement(1980, "Uzair"));
+      const cutPieces = function (fruit) {
+        return fruit * 4;
+      };
+      const fruiProcessor = function (apples, orange) {
+        const applesPices = cutPieces(apples);
+        const orangePieces = cutPieces(orange);
+        const juice = `juice with ${applesPices} pieces of apple and ${orangePieces} pieces of orange`;
+        return juice;
+      };
+
+      console.log(fruiProcessor(3, 4));
+    </script>
+  </head>
+  <body></body>
+</html>

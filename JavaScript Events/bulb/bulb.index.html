@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      #container {
+        text-align: center;
+      }
+
+      #myimage {
+        width: 200px;
+        height: 280px;
+      }
+    </style>
+
+    <script>
+      function lighton() {
+        document.getElementById("myimage").src = "bulbon.gif";
+      }
+      function lightoff() {
+        document.getElementById("myimage").src = "bulboff.gif";
+      }
+    </script>
+
+    <title>Bulb</title>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        id="myimage"
+        onmousedown="lighton()"
+        onmouseup="lightoff()"
+        src="bulboff.gif"
+        alt="Bulb"
+      />
+      <h2 style="color: gold">Click and hold the mouse!</h2>
+    </div>
+  </body>
+</html>
